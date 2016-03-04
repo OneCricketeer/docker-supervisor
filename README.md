@@ -13,4 +13,6 @@ This image uses all the defaults setup by running `echo_supervisord_conf`, but w
 | `childlogdir` | `/var/log/supervisor/` |
 | `[include]` | `/etc/supervisord.d/*.conf` |
 
-To add custom supervisor configurations to this container, mount the volume for your `.conf` into `/etc/supervisord.d/`. 
+To add additional supervisor configurations to this container, mount the volume for your `.conf` into `/etc/supervisord.d/`. 
+
+To add your own `supervisord.conf`, mount the volume at `/etc/supervisord.conf`. 
