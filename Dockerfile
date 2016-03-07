@@ -9,8 +9,6 @@ RUN pip install -q --no-cache-dir supervisor \
     && echo "[include]" >> /etc/supervisord.conf \
     && echo "files = /etc/supervisord.d/*.conf" >> /etc/supervisord.conf
 
-VOLUME /etc/supervisord.d
-
 WORKDIR /etc/supervisord.d
 
 ENTRYPOINT ["/usr/local/bin/supervisord", "-n"]
