@@ -1,4 +1,4 @@
-FROM python:2-alpine
+FROM werwolfby/armhf-alpine-python
 
 RUN apk update && apk upgrade \
     && rm -rf /var/cache/apk/*
