@@ -14,5 +14,5 @@ RUN pip install -q --no-cache-dir supervisor \
 
 WORKDIR /etc/supervisord.d
 
-ENTRYPOINT ["/usr/local/bin/supervisord", "-n"]
+ENTRYPOINT ["/usr/bin/supervisord", "-n"]
 CMD []
