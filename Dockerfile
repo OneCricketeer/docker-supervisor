@@ -1,8 +1,5 @@
 FROM werwolfby/armhf-alpine-python
 
-RUN apk update && apk upgrade \
-    && rm -rf /var/cache/apk/*
-
 RUN pip install -q --no-cache-dir supervisor \
     && mkdir -p /etc/supervisord.d /var/log/supervisor \
     && echo_supervisord_conf > /etc/supervisord.conf \
